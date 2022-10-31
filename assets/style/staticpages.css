@@ -1,0 +1,115 @@
+/*--------------------------------------------
+main
+--------------------------------------------*/
+
+/*--------------------------------------------
+hero
+--------------------------------------------*/
+.hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 660px;
+  background: var(--color-bg02) url(../images/husbandosherotemp.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero-txt h1 {
+  font-size: 5em;
+  line-height: 1.5em;
+  color: var(--color-txt04);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  border-bottom: 1px solid var(--bg03);
+}
+
+.hero-txt h3 {
+  font-size: 2em;
+  color: var(--color-txt04);
+  font-weight: lighter;
+  letter-spacing: .1em;
+}
+
+/* -------------- Botão ----------------- */
+.btn {
+  margin-top: 3em;
+  padding: 1.5em;
+}
+
+/* -------------- apresentação ----------------- */
+.homepage {
+  text-align: center;
+}
+
+.homepage i {
+  font-size: 4em;
+  letter-spacing: 1em;
+  color: var(--bg01);
+}
+
+.presentation {
+  margin: 5em 0;
+  text-align: center;
+}
+
+.presentation h1 {
+  color:var(--color-txt01);
+  font-size: 3em;
+  font-weight: lighter;
+  margin-bottom: 1em;
+}
+
+.presentation p {
+  font-size: 1.5em;
+  line-height: 1.8em;
+  max-width: 80%;
+  margin: 0 auto;
+
+}
+
+/*--------------------------------------------
+Páginas internas -páginas de informação
+--------------------------------------------*/
+.info-section {
+  margin-top: 2em;
+  line-height: 2em;
+}
+
+.info-section li {
+  margin-bottom: 2em;
+  font-weight: 400;
+}
+
+.info-section li:before,
+.form-header li:before {
+  content: "\f0da";
+  font-family: 'FontAwesome';
+  color: var(--color-txt02);
+  margin-right: .2em;
+}
+
+.info-section a {
+  color: var(--color-txt02);
+  border-bottom: 1px solid var(--color-txt03);
+  transition: .4s;
+}
+
+.info-section a:hover {
+  color: var(--color-txt01);
+  border-bottom: 1px solid var(--color-txt01);
+}
+
+/* -------------- página de obrigado ----------------- */
+.thankyoupage {
+  background-color: var(--bg03);
+  margin: 2em auto 1em;
+  padding: 3em;
+  border-radius: 10px;
+  text-align: center;
+}

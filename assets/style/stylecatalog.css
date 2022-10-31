@@ -1,0 +1,90 @@
+.catalog-content {
+    padding: 2em 0;
+}
+
+.catalog-content i {
+    color: var(--color-txt01);
+    font-size:.9em
+}
+.card-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4em;
+    margin-top: 2em;
+}
+
+.card-char {
+    background: var(--bg01) url(../images/imagecharbg.jpg) center center;
+    border-radius: 10px;
+    width: 20%;
+    overflow: hidden;
+    height: 300px;
+}
+
+.card-char a {
+    display: block;
+    text-align: center;
+    color: var(--color-txt03);
+}
+
+.imgcardchar {
+    height: 250px;
+    max-width: 100%;
+    transition: .4s;
+}
+    /*hover imagem*/
+.card-char:hover .imgcardchar {
+    transform: scale(1.1);
+}
+
+.card-char .card-txt {
+    background-color: var(--bg03);
+    padding: 10px 0;
+    border-top: 1px solid var(--color-bg01);
+    transition: .4s;
+    z-index: 1;
+}
+    /*hover texto*/
+.card-char:hover .card-txt {
+    transform: translateY(-30px);
+}
+
+/* hover veja mais */
+.card-char .card-txt p {
+    font-size: 0;
+    transition: .4s;
+}
+.card-char:hover .card-txt p{
+    font-size: 1em;
+}
+/*--------------------------------------------
+Imagens
+--------------------------------------------*/
+#img-card-char01 {
+    background-image: url(../images/);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+/*-levi*/
+#img-card-char02 {
+    background-image: url(../images/levi1.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+#img-card-char03 {
+    background-image: url(../images/);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+#img-card-char04 {
+    background-image: url(../images/);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}

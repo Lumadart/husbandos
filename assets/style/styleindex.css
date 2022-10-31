@@ -1,0 +1,320 @@
+/*--------------------------------------------
+HUSBANDOS 
+Início: Outubro 2022
+Linguagens: HTML / CSS
+Responsivo: Não
+--------------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap");
+
+/*- font-family: 'Oswald', sans-serif; -*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg01: #f61494;
+  --color-bg02: #51107f;
+  --bg01: #e3e3e3;
+  --bg02: #f8f8f8;
+  --bg03: #ffffff;
+  --color-txt01: #f61494;
+  --color-txt02: #51107f;
+  --color-txt03: #686868;
+  --color-txt04: #ffffff;
+}
+
+body {
+  background: var(--bg02);
+  color: var(--color-txt03);
+  font-family: "Oswald", sans-serif;
+  line-height: 1.5em;
+  font-weight: 300;
+}
+
+/*--------------------------------------------
+Estilos
+--------------------------------------------*/
+
+/* -------------- Links ----------------- */
+a {
+  text-decoration: none;
+}
+
+/* -------------- Listas ----------------- */
+ul {
+  list-style: none;
+}
+
+/* -------------- Headlines ----------------- */
+h1 {
+  color: var(--color-txt02);
+  font-size: 2em;
+  font-weight: normal;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  color: var(--color-txt02);
+  font-size: 1.8em;
+  font-weight: normal;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  color: var(--color-txt02);
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-bottom: 0.5em;
+}
+
+h4 {
+  color: var(--color-txt02);
+  font-size: 1.2em;
+  font-weight: normal;
+  margin-bottom: 0.5em;
+}
+
+span {
+  color: var(--color-txt01);
+  font-weight: 500;
+  margin-right: .5em;
+}
+
+.paragrafo {
+  text-indent: 1em;
+  margin-bottom: 1em;
+}
+
+/*--------------------------------------------
+Cabeçalho
+--------------------------------------------*/
+header {
+  background-image: linear-gradient(to right, var(--color-bg01), var(--color-bg02));
+}
+
+.header-content {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 1.5em 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2em;
+  color: var(--color-txt04);
+}
+
+.header-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+}
+
+ul.navigation {
+  display: flex;
+}
+
+ul.navigation li a {
+  font-size: 1.2em;
+  color: var(--color-txt04);
+  padding: 1.2em 2em;
+  transform: 2ms ease-in;
+  position: relative;
+}
+
+ul.navigation li a:before {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0px;
+  height: 3px;
+  background-color: var(--bg03);
+  transition: all 1.5s ease;
+}
+
+ul.navigation li a:hover:before {
+  width: 100%;
+}
+
+.account-btn i {
+  margin-right: 1em;
+}
+
+.cad,
+.ent {
+  margin-left: 1em;
+  padding: .4em 1em;
+  border-radius: 10px;
+  opacity: 1;
+  transition: .4s;
+
+}
+
+.cad {
+  border: 2px solid var(--color-bg01);
+  color: var(--color-txt01);
+}
+
+.ent {
+  border: 2px solid var(--bg03);
+  color: var(--color-txt04);
+
+}
+
+.cad:hover,
+.ent:hover {
+  background-color: var(--bg03);
+  color: var(--color-txt02);
+  border-color: var(--bg03)
+}
+
+/*--------------------------------------------
+Main
+--------------------------------------------*/
+main {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 80vh;
+}
+
+section {
+  margin: 2em 1em 2em;
+  padding: 3em;
+}
+
+.bg-section {
+  background-color: var(--bg03);
+  border-radius: 10px;
+}
+
+.bg-section i {
+  font-size: .9em;
+  line-height: 1em;
+  margin-right: .5em;
+  color: var(--color-bg01);
+}
+
+/*--------------------------------------------
+Breadcrumbs
+--------------------------------------------*/
+.breadcrumbs {
+  width: 1300px;
+  margin: 2em auto 0;
+  padding: 0 1em;
+  list-style: none;
+  display: flex;
+}
+
+.breadcrumbs a {
+  color: var(--color-txt03);
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+  content: ">";
+  margin: 0.5em;
+  color: var(--color-txt03);
+}
+
+/*--------------------------------------------
+Botões
+--------------------------------------------*/
+.btn_section {
+  display: flex;
+  gap: 2em;
+  width: 100%;
+}
+
+.btn {
+  width: 100%;
+  padding: .8em;
+  margin-top: 1em;
+  display: block;
+  color: var(--color-txt04);
+  border-radius: 10px;
+  border: transparent;
+  font-family: inherit;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 1.5em;
+  transition: 0.2s;
+  background-color: var(--color-bg02);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn:before {
+  transition: .5s all ease;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: " ";
+  background-color: var(--color-bg01);
+}
+
+.btn:hover:before {
+  transition: .5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
+/*--------------------------------------------
+footer
+--------------------------------------------*/
+footer {
+  background-color: var(--bg01);
+
+}
+
+.footer-content {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2em 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-footer {
+  background-image: linear-gradient(to right, var(--color-bg01), var(--color-bg02));
+  color: var(--color-txt04);
+  font-size: .8em;
+  letter-spacing: .1em;
+  padding: 1em;
+  text-align: center;
+}
+
+.footer-content .logo {
+  color: var(--color-txt01);
+  font-size: 1.5em;
+}
+
+.footer-nav {
+  display: flex;
+}
+
+.footer-nav li a {
+  color: var(--color-txt02);
+  padding: 1.2em 2em;
+  transition: .4s;
+}
+
+.footer-nav li a:hover {
+  color: var(--color-txt01);
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--estilos-->
+    <link rel="stylesheet" href="assets/style/styleindex.css">
+    <link rel="stylesheet" href="assets/style/styleforms.css">
+    <link rel="shortcut icon" href="assets/images/heart.ico" type="image/x-icon">
+    <title>Doação de Husbandos</title>
+    <script src="https://kit.fontawesome.com/caf89de716.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a class="logo" href="index.html">Husbandos</a>
+            <div class="header-links">
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="about.html">Sobre</a></li>
+                        <li><a href="terms.html">Termos</a></li>
+                        <li><a href="form_contact.html">Contato</a></li>
+                        <li><a href="faq.html">F.A.Q.</a></li>
+                    </ul>
+                </nav>
+                <div class="account-btn">
+                    <a class="cad" href="form_regist.html"><i class="fa-solid fa-pen-to-square"></i> Cadastrar</a>
+                    <a class="ent" href="#"><i class="fa-solid fa-arrow-right-to-bracket"></i> Entrar</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!--breadcrumbs-->
+        <nav>
+            <ol class="breadcrumbs">
+                <li><a href="index.html">Início</a></li>
+                <li>Doe um husbando</li>
+            </ol>
+        </nav>
+        <!--início---->
+        <section class="bg-section">
+            <h2><i class="fa-solid fa-hand-holding-heart"></i> Doação de Husbandos</h2>
+            <div class="form-header">
+                <ul>
+                    <li>Serão aceitos apenas personagens de mangás e animes já existentes.</li>
+                    <li>Personagens com duas ou mais informações não preenchidas / inválidas serão descartados.</li>
+                    <li>Haverá um limite de 4 personagens de uma mesma franquia entre os listados no catálogo.</li>
+                    <li>Para mais informações e dúvidas, visite a página <a href="faq.html">F.A.Q.</a></li>
+                </ul>
+            </div>
+            <form action="https://formsubmit.co/lumadart@outlook.com" method="POST">
+                <fieldset>
+                    <legend>Seus dados</legend>
+                    <!--nome de quem enviou-->
+                    <div class="form-group">
+                        <input type="text" name="seunome" id="seunome" class="form-input" autocomplete="off"
+                            placeholder=" " required>
+                        <label for="seunome" class="form-label">Nome ou apelido</label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="two-columns">
+                    <legend> Dados do Husbando</legend>
+                    <!--dado husbando-->
+
+                    <!--nome-->
+                    <div class="form-group">
+                        <input type="text" name="nome" id="nome" class="form-input" autocomplete="off" placeholder=" "
+                            required>
+                        <label for="nome" class="form-label">Nome</label>
+                    </div>
+                    <!--origem-->
+                    <div class="form-group">
+                        <input type="text" name="origem" id="origem" class="form-input" autocomplete="off"
+                            placeholder=" " required>
+                        <label for="origem" class="form-label">Origem</label>
+                    </div>
+                    <!--idade-->
+                    <div class="form-group">
+                        <input type="text" name="idade" id="idade" class="form-input" autocomplete="off" placeholder=" "
+                            required>
+                        <label for="idade" class="form-label">Idade</label>
+                    </div>
+                    <!--aniversário-->
+                    <div class="form-group">
+                        <input type="text" name="aniversario" id="aniversario" class="form-input" autocomplete="off"
+                            placeholder=" " required>
+                        <label for="aniversario" class="form-label">Aniversário</label>
+                    </div>
+                    <!--altura-->
+                    <div class="form-group">
+                        <input type="text" name="altura" id="altura" class="form-input" autocomplete="off"
+                            placeholder=" " required>
+                        <label for="altura" class="form-label">Altura</label>
+                    </div>
+                    <!--peso-->
+                    <div class="form-group">
+                        <input type="text" name="peso" id="peso" class="form-input" autocomplete="off" placeholder=" "
+                            required>
+                        <label for="peso" class="form-label">Peso</label>
+                    </div>
+                    <!--cabelos-->
+                    <div class="form-group">
+                        <input type="text" name="cabelos" id="cabelos" class="form-input" autocomplete="off"
+                            placeholder=" " required>
+                        <label for="cabelos" class="form-label">Cor dos cabelos</label>
+                    </div>
+                    <!--olhos-->
+                    <div class="form-group">
+                        <input type="text" name="olhos" id="olhos" class="form-input" autocomplete="off" placeholder=" "
+                            required>
+                        <label for="olhos" class="form-label">Cor dos olhos</label>
+                    </div>
+                    <!--Tipo sanguíneo-->
+                    <div class="form-group">
+                        <input type="text" name="TSang" id="TSang" class="form-input" autocomplete="off" placeholder=" "
+                            required>
+                        <label for="TSang" class="form-label">Tipo sanguíneo</label>
+                    </div>
+                    <!--raça-->
+                    <div class="form-group">
+                        <input type="text" name="raça" id="raça" class="form-input" autocomplete="off" placeholder=" "
+                            required>
+                        <label for="raça" class="form-label">Raça</label>
+                    </div>
+                    <div class="form-text">
+                        <textarea name="message" id="mensagem" class="form-input" placeholder=" " rows="20"
+                            required></textarea>
+                        <label for="name" class="form-label">Resumo da história do personagem</label>
+                    </div>
+                </fieldset>
+                <div class="form-check">
+                    <input type="checkbox" name="termos" id="checkbox" value="aceito" required>
+                    <label for="checkbox">Estou de acordo com os <a href="terms.html">termos e condições</a></label>
+                </div>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyou.html">
+                <button class="btn" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <a class="logo" href="index.html">Husbandos</a>
+            <ul class="footer-nav">
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="terms.html">Termos</a></li>
+                <li><a href="form_contact.html">Contato</a></li>
+                <li><a href="faq.html">F.A.Q.</a></li>
+            </ul>
+
+        </div>
+        <div class="footer-footer">
+            &copy;Husbandos. 2022 - Desenvolvido por Lumadart.
+        </div>
+    </footer>
+</body>
+
+</html>

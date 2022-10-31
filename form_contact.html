@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--estilos-->
+    <link rel="stylesheet" href="assets/style/styleindex.css">
+    <link rel="stylesheet" href="assets/style/styleforms.css">
+    <link rel="shortcut icon" href="assets/images/heart.ico" type="image/x-icon">
+    <title>Husbandos - Contato</title>
+    <script src="https://kit.fontawesome.com/caf89de716.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a class="logo" href="index.html">Husbandos</a>
+            <div class="header-links">
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="about.html">Sobre</a></li>
+                        <li><a href="terms.html">Termos</a></li>
+                        <li><a href="form_contact.html">Contato</a></li>
+                        <li><a href="faq.html">F.A.Q.</a></li>
+                    </ul>
+                </nav>
+                <div class="account-btn">
+                    <a class="cad" href="form_regist.html"><i class="fa-solid fa-pen-to-square"></i> Cadastrar</a>
+                    <a class="ent" href="#"><i class="fa-solid fa-arrow-right-to-bracket"></i> Entrar</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!--breadcrumbs-->
+        <nav>
+            <ol class="breadcrumbs">
+                <li><a href="index.html">Início</a></li>
+                <li>Contato</li>
+            </ol>
+        </nav>
+        <!--início---->
+        <section class="bg-section">
+            <h2> <i class="fa-regular fa-envelope"></i> Contato</h2>
+            <div class="form-header">
+                <p>Este espaço é dedicado para sugestões, correções, alterações, críticas construtivas e elogios. <br>
+                    Viu alguma informação incorreta ou incompleta? Informe o nome da sessão e seu texto juntamente com
+                    seu nome para que possamos lhe creditar.</p>
+            </div>
+            <form action="https://formsubmit.co/lumadart@outlook.com" method="POST">
+
+
+                <div class="form-group">
+                    <input type="text" name="seunome" id="seunome" class="form-input" autocomplete="off" placeholder=" "
+                        required>
+                    <label for="seunome" class="form-label">Seu nome ou apelido</label>
+                </div>
+                <!--assunto-->
+                <div class="form-group">
+                    <input type="text" name="assunto" id="assunto" class="form-input" autocomplete="off" placeholder=" "
+                        required>
+                    <label for="assunto" class="form-label">Assunto</label>
+                </div>
+                <!--sugestão-->
+                <div class="form-text">
+                    <textarea name="message" id="mensagem" class="form-input" placeholder=" " rows="20"
+                        required></textarea>
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                </div>
+                </fieldset>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyou.html">
+                <button class="btn" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <a class="logo" href="index.html">Husbandos</a>
+            <ul class="footer-nav">
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="terms.html">Termos</a></li>
+                <li><a href="form_contact.html">Contato</a></li>
+                <li><a href="faq.html">F.A.Q.</a></li>
+            </ul>
+
+        </div>
+        <div class="footer-footer">
+            &copy;Husbandos. 2022 - Desenvolvido por Lumadart.
+        </div>
+    </footer>
+</body>
+
+</html>

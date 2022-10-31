@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--estilos-->
+    <link rel="stylesheet" href="assets/style/styleindex.css">
+    <link rel="stylesheet" href="assets/style/styleforms.css">
+    <link rel="shortcut icon" href="assets/images/heart.ico" type="image/x-icon">
+    <title>Husbandos - Adoção</title>
+    <script src="https://kit.fontawesome.com/caf89de716.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a class="logo" href="index.html">Husbandos</a>
+            <div class="header-links">
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="about.html">Sobre</a></li>
+                        <li><a href="terms.html">Termos</a></li>
+                        <li><a href="form_contact.html">Contato</a></li>
+                        <li><a href="faq.html">F.A.Q.</a></li>
+                    </ul>
+                </nav>
+                <div class="account-btn">
+                    <a class="cad" href="form_regist.html"><i class="fa-solid fa-pen-to-square"></i> Cadastrar</a>
+                    <a class="ent" href="#"><i class="fa-solid fa-arrow-right-to-bracket"></i> Entrar</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!--breadcrumbs-->
+        <nav>
+            <ol class="breadcrumbs">
+                <li><a href="index.html">Início</a></li>
+                <li>Adote o husbando</li>
+            </ol>
+        </nav>
+        <!--início---->
+        <section class="bg-section">
+            <h2><i class="fa-solid fa-heart-circle-plus"></i> Adoção de Husbandos</h2>
+            <form action="http://127.0.0.1:5500/thankyou.html">
+                <fieldset>
+                    <legend>Dados</legend>
+                    <!--nome de quem enviou-->
+                    <div class="form-group">
+                        <input type="text" name="nomehusbando" id="nomehusbando" class="form-input" autocomplete="off"
+                            placeholder=" " required>
+                        <label for="nomehusbando" class="form-label">Nome do husbando</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Por quanto tempo pretende adotar este husbando:</legend>
+                    <div class="radio-group">
+                        <div class="form-radio">
+                            <input type="radio" name="adocao" id="1_mes" value="1_mes" />
+                            <label for="1_mes">1 mês</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="adocao" id="3_meses" value="3_meses" />
+                            <label for="3_meses">3 meses</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="adocao" id="6_meses" value="6_meses" />
+                            <label for="6_meses">6 meses</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="adocao" id="9_meses" value="9_meses" />
+                            <label for="9_meses">9 meses</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="adocao" id="1_ano" value="1_ano" />
+                            <label for="1_ano">1 ano</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="adocao" id="indeterminada" value="indeterminada" />
+                            <label for="indeterminada">Até a data informada abaixo</label>
+                        </div>
+                    </div>
+                    <div class="form-date">
+                        <input type="date" name="data" id="data" required />
+                    </div>
+                </fieldset>
+
+                <div class="form-check">
+                    <input type="checkbox" name="termos" id="checkbox" value="aceito" max="2024-01-01" required>
+                    <label for="checkbox">Estou de acordo com os <a href="terms.html">termos e condições</a></label>
+                </div>
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyou.html">
+                <button class="btn" type="submit" value="enviar">Enviar</button>
+            </form>
+            <div class="form-footer">
+                <span>Atenção:</span>
+                <p>Este formulário é meramente ilustrativo, seus dados não serão armazenados.
+                    Se optar por preencher os campos, faça com dados fictícios.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <a class="logo" href="index.html">Husbandos</a>
+            <ul class="footer-nav">
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="terms.html">Termos</a></li>
+                <li><a href="form_contact.html">Contato</a></li>
+                <li><a href="faq.html">F.A.Q.</a></li>
+            </ul>
+
+        </div>
+        <div class="footer-footer">
+            &copy;Husbandos. 2022 - Desenvolvido por Lumadart.
+        </div>
+    </footer>
+</body>
+
+</html>

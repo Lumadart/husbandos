@@ -1,0 +1,159 @@
+/*--------------------------------------------
+Estilos formulários
+--------------------------------------------*/
+.form-header{
+  margin:2em 0 ;
+  display: flex ;
+}
+.form-header li {
+  font-weight: 400;
+}
+
+.form-header li:before {
+  content: "\f0da";
+  font-family: 'FontAwesome';
+  color: var(--color-txt02);
+  margin-right: .4em;
+}
+.form-footer{
+  margin-top:1em;
+  display: flex ;
+}
+.form-columns {
+  display: flex;
+  gap: 2em;
+}
+
+.form-column {
+  width: 100%;
+}
+
+.form-group {
+  position: relative;
+  width: 48%;
+  height: 2.8em;
+  margin-bottom: 25px;
+}
+
+/*textarea*/
+.form-text {
+  position: relative;
+  width: 100%;
+  height: 6em;
+  margin-bottom: 25px;
+}
+
+textarea {
+  resize: none;
+}
+
+/*radio*/
+.form-radio input {
+  margin-right: 1em;
+}
+
+.radio-group {
+  display: flex;
+}
+
+.form-radio {
+  margin-right: 3em;
+  min-height: 40px;
+}
+
+/*checkbox*/
+.form-check {
+  display: flex;
+  align-items: center;
+}
+
+.form-check input {
+  margin-right: 1em;
+}
+
+/*fieldset*/
+fieldset {
+  padding: 1em 2em;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--bg01) !important;
+}
+
+/*fieldset em duas colunas*/
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: var(--color-txt02);
+  padding: 0 1em;
+}
+
+/*data*/
+#data {
+  border: 1px solid var(--bg01) !important;
+  border-radius: 10px;
+  padding: 0.4em 1em;
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--color-txt02);
+}
+
+/*input*/
+.form-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0.5em;
+  background: none;
+  font-weight: normal;
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--color-txt03);
+  border: 2px solid var(--bg01);
+  border-radius: 8px;
+  outline: none;
+  transition: 0.4s;
+}
+
+.form-input:hover {
+  border-color: var(--color-bg02);
+}
+
+.form-input:focus {
+  border-color: var(--color-bg01);
+}
+
+/*label*/
+.form-label {
+  position: absolute;
+  left: 1em;
+  top: 0.6em;
+  padding: 0 0.6em;
+  color: var(--color-txt01);
+  font-size: 0.9em;
+  font-weight: 500;
+  cursor: text;
+  transition: top 100ms ease-in, left 100ms ease-in, font-size 100ms ease-in;
+}
+
+/*label animação*/
+.form-input:focus~.form-label,
+.form-input:not(:placeholder-shown).form-input:not(:focus)~.form-label {
+  top: -0.7em;
+  left: 0.8em;
+  font-size: 0.9em;
+  background-color: var(--bg03);
+}
+
+/*upload*/
+.picture-input {
+  display: none;
+}
