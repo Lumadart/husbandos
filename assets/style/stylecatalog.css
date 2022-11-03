@@ -60,31 +60,88 @@
 /*--------------------------------------------
 Imagens
 --------------------------------------------*/
+/*killua*/
 #img-card-char01 {
-    background-image: url(../images/);
+    background-image: url(../images/KilluaZoldyck.png);
     background-size: cover;
-    background-position: top center;
+    background-position: center center;
     background-repeat: no-repeat;
 }
 
 /*-levi*/
 #img-card-char02 {
-    background-image: url(../images/levi1.jpg);
+    background-image: url(../images/LeviAckerman.png);
     background-size: cover;
-    background-position: top center;
+    background-position: center center;
     background-repeat: no-repeat;
 }
-
+/*gojo*/
 #img-card-char03 {
     background-image: url(../images/);
     background-size: cover;
-    background-position: top center;
+    background-position: center center;
     background-repeat: no-repeat;
 }
-
+/*ban*/
 #img-card-char04 {
+    background-image: url(../images/Ban.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/*Giyu Tomioka*/
+#img-card-char05 {
+    background-image: url(../images/GiyuTomioka.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/*Ishida Uryuu*/
+#img-card-char06 {
+    background-image: url(../images/IshidaUryuu.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/*Gareki*/
+#img-card-char07 {
+    background-image: url(../images/Gareki.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* Kenshin Himura */
+#img-card-char08 {
+    background-image: url(../images/KenshinHimura.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/*genos*/
+#img-card-char09 {
+    background-image: url(../images/Genos.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/*Kirigaya Kazuto*/
+#img-card-char10 {
+    background-image: url(../images/KirigayaKazuto.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* */
+#img-card-char11 {
     background-image: url(../images/);
     background-size: cover;
-    background-position: top center;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* */
+#img-card-char12 {
+    background-image: url(../images/);
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
 }
