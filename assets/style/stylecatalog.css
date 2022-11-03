@@ -14,11 +14,15 @@
 }
 
 .card-char {
-    background: var(--bg01) url(../images/imagecharbg.jpg) center center;
+    background: var(--bg01);
     border-radius: 10px;
     width: 20%;
     overflow: hidden;
     height: 300px;
+    transition: .4s;
+}
+.card-char:hover {
+    background: var(--color-bg01);
 }
 
 .card-char a {

@@ -15,8 +15,11 @@
     border-radius: 10px;
     border: 1px solid var(--bg01);
     overflow: hidden;
+    transition:.4s;
 }
-
+.image-char:hover {
+    background: var(--color-bg01);
+}
 .image-char img {
     width: 100%;
     object-fit: cover;
