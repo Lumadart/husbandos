@@ -8,7 +8,7 @@
 
 /* -------------- Imagem ----------------- */
 .image-char {
-    background: var(--bg01) url(../images/imagecharbg.jpg) no-repeat center center;
+    background: var(--bg01);
     background-size: cover;
     height: 600px;
     width: 380px;

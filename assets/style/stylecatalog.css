@@ -135,16 +135,44 @@ Imagens
     background-position: center center;
     background-repeat: no-repeat;
 }
-/* */
+/*DaisukeKambe*/
 #img-card-char11 {
-    background-image: url(../images/);
+    background-image: url(../images/DaisukeKambe.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
-/* */
+/*Gray Fullbuster*/
 #img-card-char12 {
-    background-image: url(../images/);
+    background-image: url(../images/GrayFullbuster.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/*Izaya Orihara */
+#img-card-char13 {
+    background-image: url(../images/IzayaOrihara.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/*Shoto Todoroki*/
+#img-card-char14 {
+    background-image: url(../images/ShotoTodoroki.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/**/
+#img-card-char15 {
+    background-image: url(../images);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/**/
+#img-card-char16 {
+    background-image: url(../images);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
