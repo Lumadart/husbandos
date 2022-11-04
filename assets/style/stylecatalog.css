@@ -163,16 +163,16 @@ Imagens
     background-position: center center;
     background-repeat: no-repeat;
 }
-/**/
+/*Loid Forger*/
 #img-card-char15 {
-    background-image: url(../images);
+    background-image: url(../images/LoidForger.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
-/**/
+/*Minato Namikaze*/
 #img-card-char16 {
-    background-image: url(../images);
+    background-image: url(../images/MinatoNamikaze.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
